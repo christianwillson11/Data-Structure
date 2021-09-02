@@ -38,7 +38,8 @@ node<int>* generateNumber(int how_many,int *_length,int pj) {
 			}
 		}
 	}
-
+	
+	//for checking the data structure truth
 	/*while (head != NULL) {
 		cout << head->data << " ";
 		head = head->next;
@@ -51,23 +52,20 @@ node<int>* generateNumber(int how_many,int *_length,int pj) {
 	}
 
 	int asd = lain;
-	/*cout << "How many : " << how_many << endl;
-	cout << lain << endl;*/
+	
 
 	srand(time(0));
 	while(count < asd) {
 		temp = head;
 		int y = rand() % (asd);
 
-		/*cout << y << endl;*/
 		
 		for (int j = 0; j <= y; j++) {
 			temp2 = new node<int>;
 
 			if (j == y && temp->data != -1) {
-				/*cout << "sukses" << endl;*/
+
 				temp2->data = temp->data;
-				/*cout << temp2->data << endl;*/
 				temp2->next = NULL;
 
 				if (head2 == NULL) {
